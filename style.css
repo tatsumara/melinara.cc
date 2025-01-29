@@ -47,10 +47,11 @@ header a:hover {
 }
 
 main {
+	max-width: 1080px;
 	padding: 0 10px;
+	margin: auto;
 }
-
-p {
+main p {
 	text-align: justify;
 }
 

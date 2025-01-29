@@ -1,0 +1,59 @@
+:root {
+	--bg: #282828;
+	--fg: #3c3836;
+	--text: #fbf1c7;
+	--text-alt: #ebdbb2;
+	--accent: #98971a;
+	--accent-alt: #b8bb26;
+}
+
+@font-face {
+	font-family: "Merriweather";
+	src: url(media/Merriweather-Regular.ttf);
+}
+@font-face {
+	font-family: "Merriweather Black";
+	src: url(media/Merriweather-Black.ttf);
+}
+
+body {
+	background-color: var(--bg);
+	margin: auto;
+	font-family: "Merriweather";
+	color: var(--text);
+}
+
+header {
+	font-family: "Merriweather Black";
+	font-size: 20px;
+	background-color: var(--fg);
+	padding: 10px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+header a {
+	color: inherit;
+	text-decoration: none;
+	transition: color 250ms;
+}
+header a:hover {
+	color: var(--accent-alt);
+}
+#header-title {
+	font-size: 32px;
+	color: var(--accent);
+}
+
+main {
+	padding: 0 10px;
+}
+
+footer {
+	background-color: var(--fg);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
